@@ -65,5 +65,12 @@ class ide extends Model
     public function delivirabless(){
         return $this->hasMany(delivirabless::class);
     }
+    public function jadwal_pengerjaan(){
+        return $this->hasMany(jadwal_pengerjaan::class);
+    }
+    public function jadwal_sendiri(){
+        return $this->hasMany(jadwal_sendiri::class);
+    }
+    
 
 }

@@ -37,6 +37,8 @@
   <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
@@ -92,6 +94,10 @@
   <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
 
   <script>
     $('.readmore-btn').on('click',function(){
@@ -140,9 +146,36 @@
       });
 
     });
+
+
+    $(document).ready(function(){
+    $("#parent2").css("display","none");
+        $(".aboveage2").click(function(){
+        if ($('input[name=fitur_utama_id]:checked').val() == "No" ) {
+            $("#parent2").slideDown("fast"); //Slide Down Effect
+            $.cookie('showTop', 'expanded'); //Add cookie 'ShowTop'
+        } else {
+            $("#parent2").slideUp("fast");  //Slide Up Effect
+            $.cookie('showTop', 'collapsed'); //Add cookie 'ShowTop'
+        }
+     });
+        var showTop = $.cookie('showTop');
+        if (showTop == 'expanded') {
+        $("#parent2").show("fast");
+        $('input[name=fitur_utama_id]:checked');
+      } else {
+        $("#parent2").hide("fast");
+        $('input[name=fitur_utama_id]:checked');
+      }
+
+
+
+      
+});
   </script>
 
   <!-- Template Main JS File -->
+  <!-- <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script> -->
   <script src="/assets/js/main.js"></script>
 </body>
 </html>

@@ -54,7 +54,7 @@
                     <p>Fitur-fitur utama yang harus dimiliki sistem untuk bisa mencapai Minimum Viable Product(MVP) sesuai dengan tujuan dari ide proyek.
                         Kamu ditantang untuk bisa menyelesaikan fitur-fitur ini ketika kamu memilihnya nanti.</p>
                 @foreach($fitur_tambahan as $ft)
-                    @if($ft->id==$sb->fitur_id)
+                @if($ft->isUtama=="1")
                     <div class="content border border-2 border-dark rounded-3 p-3">
                         <div class="row">
                             <div class="row text-secondary">
@@ -86,15 +86,16 @@
                         </div>
                     </div>
                     <br>
-                </div>
-                @endif
+                    @endif
                 @endforeach
+                </div>
+               
             </div>
         
     <!-- end of cerita ide -->
 
      <!-- ulasan ide -->
-     <div class="col-3">
+                    <div class="col-3">
                         <div class="row">
                             <h5 class="text-secondary">Ulasan Ide</h5>
                         </div>

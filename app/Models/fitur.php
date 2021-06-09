@@ -21,4 +21,10 @@ class fitur extends Model
     public function ide(){
         return $this->belongsTo(ide::class);
     }
+    public function fitur(){
+        return $this->hasMany(fitur::class);
+    }
+    public function jadwal_sendiri(){
+        return $this->hasMany(jadwal_sendiri::class);
+    }
 }

@@ -13,9 +13,13 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link" href="#hero"><strong>Beranda</strong></a></li>
+          @guest
+          <li><a class="nav-link" href="{{route('register')}}"><strong>Jelajah Ide</strong></a></li>
+          @else
           <li><a class="nav-link" href="{{route('home')}}"><strong>Jelajah Ide</strong></a></li>
-          <li><a class="nav-link" href="#services"><strong>Berkontribusi</strong></a></li>
-          <li><a class="nav-link" href="#portfolio"><strong>Berlangganan</strong></a></li>
+          @endguest
+          <li><a class="nav-link disabled" href=""><strong>Berkontribusi</strong></a></li>
+          <li><a class="nav-link disabled" href="#"><strong>Berlangganan</strong></a></li>
          
           
                         @guest
@@ -60,7 +64,7 @@
                                         @csrf
                                     </form>
                                 </li>
-                                <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                                <!-- <li><a class="dropdown-item text-dark" href="#">Another action</a></li> -->
                             </ul>
                         </div>
                         @endguest

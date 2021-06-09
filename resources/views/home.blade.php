@@ -5,10 +5,10 @@
     <div class="row border-2 border-top border-bottom text-center mt-5 pt-3 pb-2">
         <div class="container row">
             <ul  class="list-inline">
-                <li class="list-inline-item pe-3"><a class="text-dark" href="#">Full Stack Web</a></li>
-                <li class="list-inline-item pe-3"><a class="text-dark" href="#">Front-End Web</a></li>
-                <li class="list-inline-item pe-3"><a class="text-dark" href="#">Back-End Web</a></li>
-                <li class="list-inline-item pe-3"><a class="text-dark" href="#">Mobile</a></li>
+                <li class="list-inline-item pe-3 disabled"><a class="disabled" href="#">Full Stack Web</a></li>
+                <li class="list-inline-item pe-3 disabled"><a class="disabled" href="#">Front-End Web</a></li>
+                <li class="list-inline-item pe-3 disabled"><a class="disabled"  href="#">Back-End Web</a></li>
+                <li class="list-inline-item pe-3 disabled"><a class="disabled"  href="#">Mobile</a></li>
             </ul>
         </div>
     </div>

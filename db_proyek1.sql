@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 29 Bulan Mei 2021 pada 05.06
+-- Waktu pembuatan: 09 Jun 2021 pada 13.42
 -- Versi server: 10.4.17-MariaDB
 -- Versi PHP: 7.4.14
 
@@ -38,7 +38,9 @@ CREATE TABLE `activity_diagram` (
 --
 
 INSERT INTO `activity_diagram` (`id`, `link`, `ide_id`) VALUES
-(1, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 1);
+(1, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 1),
+(2, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 2),
+(3, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 3);
 
 -- --------------------------------------------------------
 
@@ -90,15 +92,35 @@ INSERT INTO `database_ide` (`id`, `nama_database`, `keterangan`) VALUES
 
 CREATE TABLE `delivirabless` (
   `id` int(11) NOT NULL,
-  `flowchart_id` int(11) DEFAULT NULL,
-  `activity_diagram_id` int(11) DEFAULT NULL,
-  `erd_id` int(11) DEFAULT NULL,
-  `wireframe_id` int(11) DEFAULT NULL,
-  `komponen_desain_id` int(11) DEFAULT NULL,
-  `ui_desan_id` int(11) DEFAULT NULL,
+  `flowchart_id` text DEFAULT NULL,
+  `activity_diagram_id` text DEFAULT NULL,
+  `erd_id` text DEFAULT NULL,
+  `wireframe_id` text DEFAULT NULL,
+  `komponen_desain_id` text DEFAULT NULL,
+  `ui_desan_id` text DEFAULT NULL,
   `users_id` bigint(20) UNSIGNED NOT NULL,
-  `ide_id` int(11) NOT NULL
+  `ide_id` int(11) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `delivirabless`
+--
+
+INSERT INTO `delivirabless` (`id`, `flowchart_id`, `activity_diagram_id`, `erd_id`, `wireframe_id`, `komponen_desain_id`, `ui_desan_id`, `users_id`, `ide_id`, `created_at`, `updated_at`) VALUES
+(1, '1', '1', '1', '1', '1', '1', 6, 1, '2021-05-31 10:33:36', '2021-05-31 10:33:36'),
+(2, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, 5, 1, '2021-05-31 03:33:59', '2021-05-31 03:33:59'),
+(3, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, 8, 1, '2021-06-03 02:51:55', '2021-06-03 02:51:55'),
+(4, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, NULL, 7, 1, '2021-06-03 05:20:31', '2021-06-03 05:20:31'),
+(5, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, NULL, 4, 1, '2021-06-03 06:49:02', '2021-06-03 06:49:02'),
+(6, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, 10, 1, '2021-06-03 19:22:09', '2021-06-03 19:22:09'),
+(7, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, NULL, 11, 1, '2021-06-03 19:37:35', '2021-06-03 19:37:35'),
+(8, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, 12, 1, '2021-06-03 23:14:10', '2021-06-03 23:14:10'),
+(9, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, 13, 1, '2021-06-03 23:32:42', '2021-06-03 23:32:42'),
+(10, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, NULL, 14, 1, '2021-06-03 23:40:56', '2021-06-03 23:40:56'),
+(11, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, 6, 2, '2021-06-08 01:21:13', '2021-06-08 03:36:36'),
+(12, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, NULL, 6, 3, '2021-06-08 01:21:57', '2021-06-08 01:21:57');
 
 -- --------------------------------------------------------
 
@@ -117,7 +139,9 @@ CREATE TABLE `erd` (
 --
 
 INSERT INTO `erd` (`id`, `link`, `ide_id`) VALUES
-(1, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 1);
+(1, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 1),
+(2, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 2),
+(3, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 3);
 
 -- --------------------------------------------------------
 
@@ -156,7 +180,13 @@ CREATE TABLE `fitur` (
 INSERT INTO `fitur` (`id`, `nama`, `isUtama`, `estimasi_waktu`, `ide_id`) VALUES
 (1, 'Fitur Memilih Tempat Magang\r\n', 0, '15 - 30 ', 1),
 (2, 'Fitur Filter Tempat Magang', 0, '15 - 30 ', 1),
-(3, 'Landing Page Website', 1, '3', 1);
+(3, 'Landing Page Website', 1, '3', 1),
+(4, 'Fitur Scan Wajah', 0, '7 - 10', 3),
+(5, 'Fitur Pembaca Mimik Wajah', 1, '5 - 10', 3),
+(6, 'Fitur Pengenalan dengan Nama', 1, '10 - 20', 3),
+(7, 'Fitur Seleksi Wajah', 0, '15 - 30', 3),
+(8, 'Fitur Kembalian Otomatis', 1, '3 - 5', 2),
+(9, 'Fitur Scan Uang Asli', 0, '15 - 30 ', 2);
 
 -- --------------------------------------------------------
 
@@ -169,8 +199,28 @@ CREATE TABLE `fitur_kerjakan` (
   `fitur_utama_id` int(11) NOT NULL,
   `fitur_tambahan_id` int(11) NOT NULL,
   `users_id` bigint(20) UNSIGNED NOT NULL,
-  `ide_id` int(11) NOT NULL
+  `ide_id` int(11) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `fitur_kerjakan`
+--
+
+INSERT INTO `fitur_kerjakan` (`id`, `fitur_utama_id`, `fitur_tambahan_id`, `users_id`, `ide_id`, `created_at`, `updated_at`) VALUES
+(1, 1, 3, 6, 1, '2021-05-31 02:59:08', '2021-05-31 02:59:08'),
+(2, 1, 3, 5, 1, '2021-05-30 20:02:35', '2021-06-02 23:16:55'),
+(3, 2, 3, 8, 1, '2021-06-03 02:51:27', '2021-06-03 02:52:35'),
+(4, 2, 3, 7, 1, '2021-06-03 05:20:24', '2021-06-03 05:20:24'),
+(5, 2, 3, 4, 1, '2021-06-03 06:48:57', '2021-06-03 06:48:57'),
+(6, 1, 3, 10, 1, '2021-06-03 19:22:00', '2021-06-03 19:22:00'),
+(7, 1, 3, 11, 1, '2021-06-03 19:37:28', '2021-06-03 19:37:28'),
+(8, 2, 3, 12, 1, '2021-06-03 23:13:41', '2021-06-03 23:14:35'),
+(9, 2, 3, 13, 1, '2021-06-03 23:31:57', '2021-06-03 23:33:25'),
+(10, 1, 3, 14, 1, '2021-06-03 23:40:25', '2021-06-03 23:40:25'),
+(12, 4, 5, 6, 3, '2021-06-08 01:16:50', '2021-06-08 01:17:36'),
+(13, 9, 8, 6, 2, '2021-06-08 01:21:05', '2021-06-08 01:21:05');
 
 -- --------------------------------------------------------
 
@@ -189,7 +239,9 @@ CREATE TABLE `flowchart` (
 --
 
 INSERT INTO `flowchart` (`id`, `link`, `ide_id`) VALUES
-(1, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 1);
+(1, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 1),
+(3, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 2),
+(4, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 3);
 
 -- --------------------------------------------------------
 
@@ -210,7 +262,6 @@ CREATE TABLE `framework` (
 INSERT INTO `framework` (`id`, `nama_framework`, `keterangan`) VALUES
 (1, 'Laravel', 'Laravel adalah framework terkenal yang digunakan mengembangkan aplikasi yang sangat kuat. Framework ini sangat fleksibel dan dapat diskalakan dengan menawarkan fitur khusus rentang tinggi yang mungkin Anda butuhkan'),
 (3, 'Symfony', 'Symfony membantu Anda mengembangkan aplikasi yang kuat dengan fitur-fiturnya yang paling bagus. Pada tahun 2005, Symfony diluncurkan dengan arsitektur MVC, penggunaan kembali kode, session management, routing URI yang fleksibel, dan dukungan platform yang berbeda untuk kelas basis data.'),
-(5, ' Yii', 'Framework ini paling terkenal dengan sejumlah fiturnya terutama untuk CodeCeption dan integrasi PHP. Yii Framework adalah salah satu framework PHP paling ringan yang mudah diperluas dan dipasang.'),
 (6, 'Zend', 'Sulit untuk mengalahkan frame Zend jika Anda mencari aplikasi industri skala besar. Framework ini menyediakan hampir semua fitur OOP menjadi framework berorientasi objek seperti enkapsulasi dll. Zend terintegrasi dengan baik pada lingkungan yang memfasilitasi pengembangan produk software  berkualitas tinggi untuk perusahaan.');
 
 -- --------------------------------------------------------
@@ -259,6 +310,77 @@ INSERT INTO `ide` (`id`, `judul`, `img`, `hari`, `rating`, `kategori_id`, `level
 (1, 'Website Portal Magang', 'assets/img/ide.png', '15 - 30 Hari', 4.5, 2, 1),
 (2, 'Aplikasi Pembayaran & Validasi Online', 'assets/img/ide.png', '10 - 20 Hari', 4.3, 1, 1),
 (3, 'Aplikasi Pengenalan Wajah', 'assets/img/ide.png', '15 - 45 Hari', 4.9, 1, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `jadwal_pengerjaan`
+--
+
+CREATE TABLE `jadwal_pengerjaan` (
+  `id` int(11) NOT NULL,
+  `tanggal_mulai` date NOT NULL,
+  `senin` tinyint(1) DEFAULT NULL,
+  `selasa` tinyint(1) DEFAULT NULL,
+  `rabu` tinyint(1) DEFAULT NULL,
+  `kamis` tinyint(1) DEFAULT NULL,
+  `jumat` tinyint(1) DEFAULT NULL,
+  `sabtu` tinyint(1) DEFAULT NULL,
+  `minggu` tinyint(1) DEFAULT NULL,
+  `estimasi_waktu` int(2) NOT NULL,
+  `ide_id` int(11) NOT NULL,
+  `user_id` bigint(20) UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `jadwal_pengerjaan`
+--
+
+INSERT INTO `jadwal_pengerjaan` (`id`, `tanggal_mulai`, `senin`, `selasa`, `rabu`, `kamis`, `jumat`, `sabtu`, `minggu`, `estimasi_waktu`, `ide_id`, `user_id`, `created_at`, `updated_at`) VALUES
+(2, '2021-06-17', 0, 0, 0, NULL, NULL, NULL, NULL, 1, 1, 6, '2021-06-02 18:34:53', '2021-06-02 18:34:53'),
+(7, '2021-06-03', 0, 0, NULL, NULL, NULL, NULL, NULL, 3, 1, 8, '2021-06-03 02:59:55', '2021-06-03 02:59:55'),
+(10, '2021-06-04', NULL, 0, 0, NULL, NULL, NULL, NULL, 5, 1, 7, '2021-06-03 05:24:21', '2021-06-03 05:24:21'),
+(11, '2021-06-04', NULL, 0, 0, 0, NULL, NULL, NULL, 5, 1, 4, '2021-06-03 06:49:16', '2021-06-03 06:49:16'),
+(12, '2021-06-05', 0, 0, 0, 0, NULL, NULL, NULL, 1, 1, 11, '2021-06-03 19:38:32', '2021-06-03 19:38:32'),
+(13, '2021-06-04', 0, 0, 0, 0, 0, NULL, NULL, 1, 1, 12, '2021-06-03 23:16:05', '2021-06-03 23:16:05'),
+(14, '2021-06-07', NULL, NULL, NULL, NULL, NULL, 0, 0, 3, 1, 13, '2021-06-03 23:34:33', '2021-06-03 23:34:33'),
+(15, '2021-06-12', 0, 0, 0, 0, 0, NULL, NULL, 5, 1, 14, '2021-06-03 23:43:14', '2021-06-03 23:43:14'),
+(16, '2021-06-09', 0, 0, 0, 0, NULL, NULL, NULL, 3, 2, 6, '2021-06-08 03:37:23', '2021-06-08 03:37:23');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `jadwal_sendiri`
+--
+
+CREATE TABLE `jadwal_sendiri` (
+  `id` int(11) NOT NULL,
+  `hari` int(5) NOT NULL,
+  `sub_fitur_id` int(11) NOT NULL,
+  `fitur_id` int(11) NOT NULL,
+  `user_id` bigint(20) UNSIGNED NOT NULL,
+  `ide_id` int(11) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `jadwal_sendiri`
+--
+
+INSERT INTO `jadwal_sendiri` (`id`, `hari`, `sub_fitur_id`, `fitur_id`, `user_id`, `ide_id`, `created_at`, `updated_at`) VALUES
+(4, 5, 1, 1, 5, 1, '2021-06-03 19:18:25', '2021-06-03 19:18:25'),
+(5, 10, 2, 1, 5, 1, '2021-06-03 19:18:25', '2021-06-03 19:18:25'),
+(6, 9, 3, 1, 5, 1, '2021-06-03 19:18:25', '2021-06-03 19:18:25'),
+(7, 8, 6, 3, 5, 1, '2021-06-03 19:18:25', '2021-06-03 19:18:25'),
+(8, 7, 7, 3, 5, 1, '2021-06-03 19:18:25', '2021-06-03 19:18:25'),
+(9, 10, 1, 1, 10, 1, '2021-06-03 19:35:03', '2021-06-03 19:35:03'),
+(10, 3, 2, 1, 10, 1, '2021-06-03 19:35:03', '2021-06-03 19:35:03'),
+(11, 5, 3, 1, 10, 1, '2021-06-03 19:35:03', '2021-06-03 19:35:03'),
+(12, 2, 6, 3, 10, 1, '2021-06-03 19:35:03', '2021-06-03 19:35:03'),
+(13, 3, 7, 3, 10, 1, '2021-06-03 19:35:03', '2021-06-03 19:35:03');
 
 -- --------------------------------------------------------
 
@@ -325,7 +447,9 @@ CREATE TABLE `komponen_desain` (
 --
 
 INSERT INTO `komponen_desain` (`id`, `link`, `ide_id`) VALUES
-(1, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 1);
+(1, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 1),
+(2, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 2),
+(3, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 3);
 
 -- --------------------------------------------------------
 
@@ -394,6 +518,7 @@ CREATE TABLE `sub_fitur` (
   `nama` varchar(100) NOT NULL,
   `deskripsi` text NOT NULL,
   `fitur_id` int(11) NOT NULL,
+  `ide_id` int(11) NOT NULL,
   `estimasi_waktu` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -401,14 +526,25 @@ CREATE TABLE `sub_fitur` (
 -- Dumping data untuk tabel `sub_fitur`
 --
 
-INSERT INTO `sub_fitur` (`id`, `nama`, `deskripsi`, `fitur_id`, `estimasi_waktu`) VALUES
-(1, 'Menampilkan Informasi Tempat Magang', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo. Convallis ullamcorper lectus duis magna non ultricies adipiscing odio urna. Neque ut mi blandit eget nulla eget pellentesque. Ut urna nunc arcu id tempor.', 1, '3 - 5'),
-(2, 'Fitur Pencarian Tempat Magang', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo.', 1, '3 - 5'),
-(3, 'Fitur Filter Tempat Magang', 'Natoque enim varius tortor dictum ac. Dui sodales odio vestibulum augue malesuada blandit nibh netus et. Sit sed viverra maecenas suspendisse ut laoreet in enim. Egestas tellus quis leo nibh ut id dolor lacus velit.', 1, '3 - 5'),
-(4, 'Fitur Menentukan Durasi Magang', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo. Convallis ullamcorper lectus duis magna non ultricies adipiscing odio urna. Neque ut mi blandit eget nulla eget pellentesque. Ut urna nunc arcu id tempor.', 2, '3 - 5'),
-(5, 'Fitur Upload CV & Surat Keterangan Magang', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo.', 2, '3 - 5'),
-(6, 'Section Hero', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo. Convallis ullamcorper lectus duis magna non ultricies adipiscing odio urna. Neque ut mi blandit eget nulla eget pellentesque. Ut urna nunc arcu id tempor.', 3, '1'),
-(7, 'Section Fitur-fitur Website', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo.', 3, '2');
+INSERT INTO `sub_fitur` (`id`, `nama`, `deskripsi`, `fitur_id`, `ide_id`, `estimasi_waktu`) VALUES
+(1, 'Menampilkan Informasi Tempat Magang', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo. Convallis ullamcorper lectus duis magna non ultricies adipiscing odio urna. Neque ut mi blandit eget nulla eget pellentesque. Ut urna nunc arcu id tempor.', 1, 1, '3 - 5'),
+(2, 'Fitur Pencarian Tempat Magang', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo.', 1, 1, '3 - 5'),
+(3, 'Fitur Filter Tempat Magang', 'Natoque enim varius tortor dictum ac. Dui sodales odio vestibulum augue malesuada blandit nibh netus et. Sit sed viverra maecenas suspendisse ut laoreet in enim. Egestas tellus quis leo nibh ut id dolor lacus velit.', 1, 1, '3 - 5'),
+(4, 'Fitur Menentukan Durasi Magang', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo. Convallis ullamcorper lectus duis magna non ultricies adipiscing odio urna. Neque ut mi blandit eget nulla eget pellentesque. Ut urna nunc arcu id tempor.', 2, 1, '3 - 5'),
+(5, 'Fitur Upload CV & Surat Keterangan Magang', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo.', 2, 1, '3 - 5'),
+(6, 'Section Hero', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo. Convallis ullamcorper lectus duis magna non ultricies adipiscing odio urna. Neque ut mi blandit eget nulla eget pellentesque. Ut urna nunc arcu id tempor.', 3, 1, '1'),
+(7, 'Section Fitur-fitur Website', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo.', 3, 1, '2'),
+(8, 'Fitur Ambil Gambar Wajah', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo.', 4, 3, '4'),
+(9, 'Fitur Seleksi Gelap Terang Background', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo.', 4, 3, '6'),
+(10, 'Fitur Crop Wajah', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo.', 5, 3, '8'),
+(11, 'Fitur Klasifikasi Wajah', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo.', 6, 3, '10'),
+(12, 'Fitur Pembentukan Pixel Wajah', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo.', 7, 3, '10'),
+(13, 'Fitur add RGB Wajah', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo.', 5, 3, '8'),
+(14, 'Fitur Hitung Pembayaran', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo.', 8, 2, '4 '),
+(15, 'Fitur Diskon', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo.', 8, 2, '6'),
+(16, 'Fitur Filter Uang', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo.', 8, 2, '8'),
+(17, 'Fitur Perbandingan Gambar', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo.', 9, 2, '11'),
+(18, 'Fitur Pencarian Kode ', 'Tortor ac cursus pretium ultricies hendrerit porta. Aenean sem mauris consequat ridiculus mi. Praesent odio enim, vel, sed volutpat. Nam ultrices sed duis nisi. Velit, nibh sem egestas sit urna curabitur leo.', 9, 2, '5');
 
 -- --------------------------------------------------------
 
@@ -457,7 +593,17 @@ CREATE TABLE `teknologi_kerjakan` (
 --
 
 INSERT INTO `teknologi_kerjakan` (`id`, `framework`, `bahasa_program`, `database_ide`, `version_control`, `users_id`, `ide_id`, `created_at`, `updated_at`) VALUES
-(1, 'Laravel', 'PHP', 'Firebird', 'Github', 5, 1, '2021-05-29 02:47:38', '2021-05-28 20:05:49');
+(1, 'Laravel', 'Java', 'Firebird', 'Gitlab', 5, 1, '2021-05-29 02:47:38', '2021-05-30 07:06:24'),
+(9, 'Laravel', 'PHP', 'MySQL', 'Github', 8, 1, '2021-06-03 02:41:00', '2021-06-03 02:51:11'),
+(10, 'Zend', 'PHP', 'Firebird', 'Gitlab', 7, 1, '2021-06-03 05:19:38', '2021-06-03 05:19:49'),
+(11, 'Laravel', 'C++', 'MySQL', 'Github', 4, 1, '2021-06-03 06:48:43', '2021-06-03 08:10:52'),
+(12, 'Zend', 'Java', 'MySQL', 'Github', 10, 1, '2021-06-03 19:21:52', '2021-06-03 19:21:52'),
+(13, 'Laravel', 'Java', 'MySQL', 'Github', 11, 1, '2021-06-03 19:36:55', '2021-06-03 19:37:11'),
+(14, 'Laravel', 'C++', 'MySQL', 'Github', 12, 1, '2021-06-03 23:13:21', '2021-06-03 23:13:29'),
+(15, 'Laravel', 'Java', 'MySQL', 'Github', 13, 1, '2021-06-03 23:31:03', '2021-06-03 23:31:29'),
+(16, 'Laravel', 'Swift', 'MySQL', 'Github', 14, 1, '2021-06-03 23:39:06', '2021-06-03 23:39:06'),
+(17, 'Laravel', 'PHP', 'MySQL', 'Github', 6, 2, '2021-06-08 00:55:06', '2021-06-08 00:55:06'),
+(18, 'Symfony', 'PHP', 'MySQL', 'Github', 6, 3, '2021-06-08 00:59:35', '2021-06-08 00:59:35');
 
 -- --------------------------------------------------------
 
@@ -476,7 +622,9 @@ CREATE TABLE `ui_desain` (
 --
 
 INSERT INTO `ui_desain` (`id`, `link`, `ide_id`) VALUES
-(1, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 1);
+(1, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 1),
+(2, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 2),
+(3, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 3);
 
 -- --------------------------------------------------------
 
@@ -506,7 +654,14 @@ INSERT INTO `users` (`id`, `username`, `name`, `email`, `auth_type`, `github_id`
 (4, 'Reynaldi1912', 'Reynaldi Ramadhani Eka Purnomo', 'reynaldi.rl14@gmail.com', NULL, NULL, NULL, '$2y$10$ZZXa87rbHAizowKUlIFf2.GkIQbr2TRcE/QEclfCluB4JXJKmz632', NULL, '2021-05-02 20:41:47', '2021-05-02 20:41:47'),
 (5, NULL, 'Reynaldi Ramadhani', 'nexrey19@gmail.com', 'github', '55469516', NULL, 'eyJpdiI6ImNGV0NJZWJQMDdYU3hpTEphZm9xbFE9PSIsInZhbHVlIjoiSmlsS3pRUUNMVHZ6N3h6cy84bkZPSEhRUUJDaVBaMjZtRWU3d3prOUJFbz0iLCJtYWMiOiI4M2FkMGRlMDYzMzhkMjA4ODEyMGI0YTVjM2MyOGVhYmQ5OGFkMWZlMTk0YTk3YTNlN2VhNmEzMDA1NTIwOTU5In0=', NULL, '2021-05-02 20:50:00', '2021-05-02 20:50:00'),
 (6, 'dicky19', 'Dicky Juniar', 'dicky@gmail.com', NULL, NULL, NULL, '$2y$10$IsikCriyxEBUTuK16CPJH.Ja/I3eDi.NDYr7GjQxZOKc5JuKsRoGC', NULL, '2021-05-20 03:22:02', '2021-05-20 03:22:02'),
-(7, 'Genadi19', 'Genadi Dharma', 'Genadi@gmail.com', NULL, NULL, NULL, '$2y$10$04yDpMLaYtsTcbXD4j4InOC6bH9r/pePgqyURE0z2PiMuydRfRKIm', NULL, '2021-05-20 03:54:32', '2021-05-20 03:54:32');
+(7, 'Genadi19', 'Genadi Dharma', 'Genadi@gmail.com', NULL, NULL, NULL, '$2y$10$04yDpMLaYtsTcbXD4j4InOC6bH9r/pePgqyURE0z2PiMuydRfRKIm', NULL, '2021-05-20 03:54:32', '2021-05-20 03:54:32'),
+(8, 'rere', 'rere', 'rere19@gmail.com', NULL, NULL, NULL, '$2y$10$T8NXe4eFlb0cFwmBr2Cce.HDMoZHvikIPpdwC64r49aHeK2gmzjLe', NULL, '2021-06-03 02:40:29', '2021-06-03 02:40:29'),
+(9, 'fago', 'fago', 'fago@gmail.com', NULL, NULL, NULL, '$2y$10$P6.n9HYbKJSLiAqnreW4Uuub4SaVBJsDIwOEDC31X.OhTSQP8gFWK', NULL, '2021-06-03 08:16:34', '2021-06-03 08:16:34'),
+(10, 'alfan', 'alfan', 'alfan@gmail.com', NULL, NULL, NULL, '$2y$10$5Hhd9MAOIcIlPKLfyTm0suMq5xcXHjyv83nm98BwxCy/Jmm.h/LEK', NULL, '2021-06-03 19:21:34', '2021-06-03 19:21:34'),
+(11, 'fagos', 'fagos', 'fagos@gmail.com', NULL, NULL, NULL, '$2y$10$gbMvju4eMBOUSP5DXDb2Z.SHeMSsg4KLzBZlTXbPH8QKTZ/1doOhq', NULL, '2021-06-03 19:36:32', '2021-06-03 19:36:32'),
+(12, 'sifago', 'sifago', 'sifago@gmail.com', NULL, NULL, NULL, '$2y$10$qZxamV7e2XCLqaJyjeFGpe4mSUf/KBCbvtxvSCQ.Ku8sMZ6GeTA8G', NULL, '2021-06-03 23:12:34', '2021-06-03 23:12:34'),
+(13, 'zettiar', 'zettiar', 'zettiar@gmail.com', NULL, NULL, NULL, '$2y$10$cfiiudx7YALNtIN/bw4jI.kbhgfUVe31WxSN7TXAiqDMlIRUmzpDa', NULL, '2021-06-03 23:28:17', '2021-06-03 23:28:17'),
+(14, 'rrrrrrr', 'reryyy', 'rry@gmail.com', NULL, NULL, NULL, '$2y$10$taAc4Lh.xapb7GTlNsqvp.6DFw8wq/YHvuQ/9wF4PGoP0pp9HksIe', NULL, '2021-06-03 23:38:34', '2021-06-03 23:38:34');
 
 -- --------------------------------------------------------
 
@@ -545,7 +700,9 @@ CREATE TABLE `wireframe` (
 --
 
 INSERT INTO `wireframe` (`id`, `link`, `ide_id`) VALUES
-(1, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 1);
+(1, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 1),
+(2, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 2),
+(3, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 3);
 
 --
 -- Indexes for dumped tables
@@ -634,6 +791,24 @@ ALTER TABLE `ide`
   ADD PRIMARY KEY (`id`),
   ADD KEY `level_id` (`level_id`),
   ADD KEY `kategori_id` (`kategori_id`);
+
+--
+-- Indeks untuk tabel `jadwal_pengerjaan`
+--
+ALTER TABLE `jadwal_pengerjaan`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `ide_id` (`ide_id`),
+  ADD KEY `user_id` (`user_id`);
+
+--
+-- Indeks untuk tabel `jadwal_sendiri`
+--
+ALTER TABLE `jadwal_sendiri`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user_id` (`user_id`),
+  ADD KEY `ide_id` (`ide_id`),
+  ADD KEY `sub_fitur_id` (`sub_fitur_id`),
+  ADD KEY `fitur_id` (`fitur_id`);
 
 --
 -- Indeks untuk tabel `kategori`
@@ -732,7 +907,7 @@ ALTER TABLE `wireframe`
 -- AUTO_INCREMENT untuk tabel `activity_diagram`
 --
 ALTER TABLE `activity_diagram`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `bahasa_program`
@@ -750,13 +925,13 @@ ALTER TABLE `database_ide`
 -- AUTO_INCREMENT untuk tabel `delivirabless`
 --
 ALTER TABLE `delivirabless`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT untuk tabel `erd`
 --
 ALTER TABLE `erd`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `failed_jobs`
@@ -768,19 +943,19 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT untuk tabel `fitur`
 --
 ALTER TABLE `fitur`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT untuk tabel `fitur_kerjakan`
 --
 ALTER TABLE `fitur_kerjakan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT untuk tabel `flowchart`
 --
 ALTER TABLE `flowchart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `framework`
@@ -801,6 +976,18 @@ ALTER TABLE `ide`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT untuk tabel `jadwal_pengerjaan`
+--
+ALTER TABLE `jadwal_pengerjaan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT untuk tabel `jadwal_sendiri`
+--
+ALTER TABLE `jadwal_sendiri`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
 -- AUTO_INCREMENT untuk tabel `kategori`
 --
 ALTER TABLE `kategori`
@@ -816,7 +1003,7 @@ ALTER TABLE `komentar_ide`
 -- AUTO_INCREMENT untuk tabel `komponen_desain`
 --
 ALTER TABLE `komponen_desain`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `level`
@@ -834,7 +1021,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT untuk tabel `sub_fitur`
 --
 ALTER TABLE `sub_fitur`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT untuk tabel `tantangan`
@@ -846,19 +1033,19 @@ ALTER TABLE `tantangan`
 -- AUTO_INCREMENT untuk tabel `teknologi_kerjakan`
 --
 ALTER TABLE `teknologi_kerjakan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT untuk tabel `ui_desain`
 --
 ALTER TABLE `ui_desain`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT untuk tabel `version_control`
@@ -870,7 +1057,7 @@ ALTER TABLE `version_control`
 -- AUTO_INCREMENT untuk tabel `wireframe`
 --
 ALTER TABLE `wireframe`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
@@ -926,6 +1113,22 @@ ALTER TABLE `gambaran_ide`
 ALTER TABLE `ide`
   ADD CONSTRAINT `ide_ibfk_1` FOREIGN KEY (`level_id`) REFERENCES `level` (`id`),
   ADD CONSTRAINT `ide_ibfk_2` FOREIGN KEY (`kategori_id`) REFERENCES `kategori` (`id`);
+
+--
+-- Ketidakleluasaan untuk tabel `jadwal_pengerjaan`
+--
+ALTER TABLE `jadwal_pengerjaan`
+  ADD CONSTRAINT `jadwal_pengerjaan_ibfk_1` FOREIGN KEY (`ide_id`) REFERENCES `ide` (`id`),
+  ADD CONSTRAINT `jadwal_pengerjaan_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
+
+--
+-- Ketidakleluasaan untuk tabel `jadwal_sendiri`
+--
+ALTER TABLE `jadwal_sendiri`
+  ADD CONSTRAINT `jadwal_sendiri_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
+  ADD CONSTRAINT `jadwal_sendiri_ibfk_2` FOREIGN KEY (`ide_id`) REFERENCES `ide` (`id`),
+  ADD CONSTRAINT `jadwal_sendiri_ibfk_3` FOREIGN KEY (`sub_fitur_id`) REFERENCES `sub_fitur` (`id`),
+  ADD CONSTRAINT `jadwal_sendiri_ibfk_4` FOREIGN KEY (`fitur_id`) REFERENCES `fitur` (`id`);
 
 --
 -- Ketidakleluasaan untuk tabel `komentar_ide`

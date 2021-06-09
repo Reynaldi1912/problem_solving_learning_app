@@ -17,9 +17,16 @@
                     <h4><strong>{{$ide->judul}}</strong></h4>
                 </div>
                 <div class="col text-end">
-                    <a href="{{ route('kerjakan1',$ide->id) }}">
-                        <button class="btn text-white" style="background-color:#F67451">Kerjakan Ide <i class="fas fa-code"></i></button>
-                    </a>  
+                @if($ada == 1)
+                        <a href="{{ route('kerjakan1',$ide->id) }}">
+                            <button class="btn text-white" style="background-color:#F67451" >Kerjakan Ide <i class="fas fa-code"></i></button>
+                        </a> 
+                @elseif($ada == 0)
+                    <a href="#" class="disabled">
+                        <button class="btn text-white bg-secondary" >Kerjakan Ide <i class="fas fa-code"></i></button>
+                    </a> 
+                @endif
+
                 </div>
             </div>
             <div class="row pt-3">
@@ -45,8 +52,8 @@
                         <li class="list-inline-item pe-1"><a href="{{ route('teknologi.show',$ide->id) }}">Teknologi Digunakan</a></li>
                         <li class="list-inline-item pe-1"><a href="{{ route('diagramproses.show',$ide->id) }}">Diagram Proses</a></li>
                         <li class="list-inline-item pe-1"><a href="{{ route('desain.show',$ide->id) }}">Desain</a></li>
-                        <li class="list-inline-item pe-1"><a href="#">Update</a></li>
-                        <li class="list-inline-item pe-1"><a href="#">FAQ</a></li>
+                        <li class="list-inline-item pe-1"><a href="#" class="disabled">Update</a></li>
+                        <li class="list-inline-item pe-1"><a href="#" class="disabled">FAQ</a></li>
                     </ul>
                 </div>
             </div>

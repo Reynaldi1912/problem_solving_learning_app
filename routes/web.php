@@ -57,6 +57,13 @@ Route::get('/kerjakan-ide/tentukan-deliverables/{id}', [App\Http\Controllers\ker
 Route::get('/kerjakan-ide/pilih-jadwal/{id}', [App\Http\Controllers\kerjakanController::class, 'kerjakan4'])->name('kerjakan4');
 
 Route::POST('/kerjakan-ide/pilih-teknologi-dan-tools/{id}', [App\Http\Controllers\kerjakanController::class, 'store_teknologi'])->name('teknologi.store');
+Route::POST('/kerjakan-ide/pilih-fitur/{id}', [App\Http\Controllers\kerjakanController::class, 'store_fitur'])->name('fitur.store');
+Route::POST('/kerjakan-ide/tentukan-deliverables/{id}', [App\Http\Controllers\kerjakanController::class, 'store_delivirables'])->name('delivirables.store');
+Route::POST('/kerjakan-ide/pilih-jadwal/{id}', [App\Http\Controllers\kerjakanController::class, 'store_jadwal'])->name('jadwal.store');
+
+
+
+
 
 
 

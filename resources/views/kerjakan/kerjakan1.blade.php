@@ -1,9 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-<form method="post" action="{{ route('teknologi.store',$ide->id) }}" enctype="multipart/form-data">
-@csrf
+
     <br><br><br><br><br>
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <strong>Whoops!</strong> Ada Yang Belum Kamu Isi.<br><br>
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}(Belum Diisi)</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <div class="container mt-5">
         <h5 class="{{$ide->kategori->color}}">{{$ide->kategori->nama_kategori}}</h5>
         <div class="row pt-4">
@@ -16,6 +25,8 @@
                     Sebelumnya
                 </button>
                 <span class="pe-2"></span>
+                <form method="post" action="{{ route('teknologi.store',$ide->id) }}" enctype="multipart/form-data">
+                @csrf
                 <a href="{{ route('kerjakan2',$ide->id) }}">
                     <button class="btn text-white" type="submit" style="background-color:#F67451">
                         Selanjutnya
@@ -53,7 +64,7 @@
             <main class="pt-5">
                 <div class="row">
                     <div class="col-8">
-                        <h3 class="text-dark"><strong>Pilih Teknologi & Teknologi</strong></h3>
+                        <h3 class="text-dark"><strong>Pilih Teknologi & Tools</strong></h3>
                         <p>Tentukanlah terlebih dahulu teknologi & tools yang akan kamu gunakan untuk mengerjakan proyek ini.</p>
 
                         <br><br>
@@ -99,7 +110,13 @@
                                 <label class="container-radio">
                                     <div class="row content border border-2 border-dark rounded-3 p-3 not-Show">
                                         <div class="col-2 pt-2">
-                                            <input type="radio" name="framework" value="{{$fm->nama_framework}}">
+                                        @foreach($cek_2 as $c)
+                                            @if($c->users_id == $user->id && $c->ide_id == $ide->id)
+                                            <input type="radio" name="framework" value="{{$fm->nama_framework}}"{{$fm->nama_framework == $validation->framework ? 'checked' : ''}}>
+                                            @else
+                                            <input type="radio" name="framework" value="{{$fm->nama_framework}}" >
+                                            @endif
+                                        @endforeach
                                             <span class="checkmark"></span>
                                         </div>
                                         <div class="col text-center pt-2">
@@ -127,7 +144,13 @@
                                 <label class="container-radio">
                                     <div class="row content border border-2 border-dark rounded-3 p-3 not-Show">
                                         <div class="col-2 pt-2">
+                                        @foreach($cek_3 as $c)
+                                            @if($c->users_id == $user->id && $c->ide_id == $ide->id)
+                                            <input type="radio" name="database_ide" value="{{$di->nama_database}}" {{$di->nama_database == $validation->database_ide ? 'checked' : ''}}>
+                                            @else
                                             <input type="radio" name="database_ide" value="{{$di->nama_database}}">
+                                            @endif
+                                        @endforeach
                                             <span class="checkmark"></span>
                                         </div>
                                         <div class="col text-center pt-2 text-line">
@@ -156,7 +179,13 @@
                                 <label class="container-radio">
                                     <div class="row content border border-2 border-dark rounded-3 p-3 not-Show">
                                         <div class="col-2 pt-2">
+                                        @foreach($cek_4 as $c)
+                                            @if($c->users_id == $user->id && $c->ide_id == $ide->id)
+                                            <input type="radio" name="version_control" value="{{$vc->nama_version_control}}" {{$vc->nama_version_control == $validation->version_control ? 'checked' : ''}}>
+                                            @else
                                             <input type="radio" name="version_control" value="{{$vc->nama_version_control}}">
+                                            @endif
+                                        @endforeach
                                             <span class="checkmark"></span>
                                         </div>
                                         <div class="col text-center pt-2 text-line">
@@ -233,7 +262,7 @@
                     </div>
                 </div>
             </main>
+            </form>
     </div>
-</form>
     
 @endsection

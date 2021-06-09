@@ -17,5 +17,11 @@ class sub_fitur extends Model
     public function fitur(){
         return $this->belongsTo(fitur::class);
     }
+    public function sub_fitur_pengerjaan(){
+        return $this->hasMany(sub_fitur_pengerjaan::class);
+    }
+    public function jadwal_sendiri(){
+        return $this->hasMany(jadwal_sendiri::class);
+    }
     
 }
