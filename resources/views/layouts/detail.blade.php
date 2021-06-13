@@ -32,7 +32,7 @@
             <div class="row pt-3">
                 <ul class="list-inline">
                     <li class="list-inline-item pe-1"> <i class="fas fa-star"></i> {{$ide->rating}}</li>
-                    <li class="list-inline-item pe-1"> <i class="fas fa-clock"></i> {{$ide->hari}}</li>
+                    <li class="list-inline-item pe-1"> <i class="fas fa-clock"></i> {{$ide->hari}} Hari</li>
                     <li class="list-inline-item pe-1"> 
                         <button class="btn btn-outline-secondary">
                             <img src="/{{$ide->level->icon}}" style="height:20px" alt="">

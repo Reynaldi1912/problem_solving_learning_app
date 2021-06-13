@@ -12,7 +12,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link" href="#hero"><strong>Beranda</strong></a></li>
+          <li><a class="nav-link" href="{{route('dashboard.index')}}"><strong>Beranda</strong></a></li>
           @guest
           <li><a class="nav-link" href="{{route('register')}}"><strong>Jelajah Ide</strong></a></li>
           @else

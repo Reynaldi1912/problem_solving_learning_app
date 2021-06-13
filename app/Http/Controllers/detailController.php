@@ -82,7 +82,7 @@ class detailController extends Controller
             $ada =1;
         }
         
-        // return $ada;
+        // return $ditemukan;
         
         return view('gambaran_ide',['ide'=>$ide[0],'gambaran_ide'=>$gambaran_ide[0],'tantangan'=>$tantangan,'komentar_ide'=>$komentar_ide,'ada'=>$ada])
         ->with('i',(request()->input('page',1)-1)*5);

@@ -22,6 +22,8 @@ use App\Models\ui_desain;
 use App\Models\komponen_desain;
 use App\Models\jadwal_pengerjaan;
 use App\Models\jadwal_sendiri;
+use App\Models\pengerjaan;
+
 
 
 
@@ -285,6 +287,33 @@ class kerjakanController extends Controller
                 'tanggal_mulai' => 'required',
                 'estimasi_waktu' => 'required',
                 ]);
+
+                $fitur_kerjakan =fitur_kerjakan::all()->where('ide_id',$id)->where('users_id',$user->id)->first();
+                $sub_fitur_utama = sub_fitur::with('fitur')->where('fitur_id',$fitur_kerjakan->fitur_utama_id)->get();
+                $sub_fitur_tambahan = sub_fitur::with('fitur')->where('fitur_id',$fitur_kerjakan->fitur_tambahan_id)->get();
+
+                for($i=0 ; $i < count($sub_fitur_utama) ; $i++){
+                    $pengerjaan = new pengerjaan;
+
+                    $pengerjaan->sub_fitur_id = $sub_fitur_utama[$i]->id;
+                    $pengerjaan->fitur_id = $fitur_kerjakan->fitur_utama_id ;
+                    $pengerjaan->user_id = $user->id;
+                    $pengerjaan->ide_id = $id;
+
+                    $pengerjaan->save();
+                }
+
+                for($i=0 ; $i < count($sub_fitur_tambahan) ; $i++){
+                    $pengerjaan = new pengerjaan;
+
+                    $pengerjaan->sub_fitur_id = $sub_fitur_tambahan[$i]->id;
+                    $pengerjaan->fitur_id = $fitur_kerjakan->fitur_tambahan_id ;
+                    $pengerjaan->user_id = $user->id;
+                    $pengerjaan->ide_id = $id;
+
+                    $pengerjaan->save();
+
+                }
         
                 $jadwal_pengerjaan = new jadwal_pengerjaan;
 
@@ -321,9 +350,35 @@ class kerjakanController extends Controller
 
                 $jadwal_pengerjaan->save();
 
-                return "Data Berhasil Disimpan";
+                return redirect()->route('dashboard.index');
+
         }else if($request->get('fitur_utama_id')=="No"){
             
+            $fitur_kerjakan =fitur_kerjakan::all()->where('ide_id',$id)->where('users_id',$user->id)->first();
+            $sub_fitur_utama = sub_fitur::with('fitur')->where('fitur_id',$fitur_kerjakan->fitur_utama_id)->get();
+            $sub_fitur_tambahan = sub_fitur::with('fitur')->where('fitur_id',$fitur_kerjakan->fitur_tambahan_id)->get();
+
+            for($i=0 ; $i < count($sub_fitur_utama) ; $i++){
+                $pengerjaan = new pengerjaan;
+
+                $pengerjaan->sub_fitur_id = $sub_fitur_utama[$i]->id;
+                $pengerjaan->fitur_id = $fitur_kerjakan->fitur_utama_id ;
+                $pengerjaan->user_id = $user->id;
+                $pengerjaan->ide_id = $id;
+
+                $pengerjaan->save();
+            }
+
+            for($i=0 ; $i < count($sub_fitur_tambahan) ; $i++){
+                $pengerjaan = new pengerjaan;
+
+                $pengerjaan->sub_fitur_id = $sub_fitur_tambahan[$i]->id;
+                $pengerjaan->fitur_id = $fitur_kerjakan->fitur_tambahan_id ;
+                $pengerjaan->user_id = $user->id;
+                $pengerjaan->ide_id = $id;
+
+                $pengerjaan->save();
+            }
     
             for ($i=0; $i <$request->get('total') ; $i++) { 
                 $jadwal_sendiri = new jadwal_sendiri;
@@ -350,7 +405,7 @@ class kerjakanController extends Controller
                 $jadwal_sendiri->save();
             }
            
-            return "data disimpan";
+            return redirect()->route('dashboard.index');
         }else{
             return back();
         }

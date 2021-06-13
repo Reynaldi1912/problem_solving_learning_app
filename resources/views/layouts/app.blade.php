@@ -98,6 +98,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+  <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!------ Include the above in your HEAD tag ---------->
 
   <script>
     $('.readmore-btn').on('click',function(){
@@ -172,6 +177,17 @@
 
       
 });
+
+        const numb = document.querySelector(".numb");
+            let counter = 0;
+            setInterval(()=>{
+              if(counter == 100){
+                clearInterval();
+              }else{
+                counter+=1;
+                numb.textContent = counter + "%";
+              }
+            }, 80);
   </script>
 
   <!-- Template Main JS File -->

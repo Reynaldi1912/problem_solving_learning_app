@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GitHubController;
 use App\Http\Controllers\jelajahIdeController;
+use App\Http\Controllers\DashboardController;
+
 
 
 /*
@@ -19,7 +21,7 @@ use App\Http\Controllers\jelajahIdeController;
 Route::get('/', function () {
     return view('index');
 });
-// Route::resource('/home', jelajahIdeController::class);
+Route::resource('/dashboard', DashboardController::class);
 
 // Route::get('/', [App\Http\Controllers\HomeController::class, 'exit'])->name('exit');
 Auth::routes();

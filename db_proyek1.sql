@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 09 Jun 2021 pada 13.42
+-- Waktu pembuatan: 13 Jun 2021 pada 05.46
 -- Versi server: 10.4.17-MariaDB
 -- Versi PHP: 7.4.14
 
@@ -109,18 +109,9 @@ CREATE TABLE `delivirabless` (
 --
 
 INSERT INTO `delivirabless` (`id`, `flowchart_id`, `activity_diagram_id`, `erd_id`, `wireframe_id`, `komponen_desain_id`, `ui_desan_id`, `users_id`, `ide_id`, `created_at`, `updated_at`) VALUES
-(1, '1', '1', '1', '1', '1', '1', 6, 1, '2021-05-31 10:33:36', '2021-05-31 10:33:36'),
-(2, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, 5, 1, '2021-05-31 03:33:59', '2021-05-31 03:33:59'),
-(3, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, 8, 1, '2021-06-03 02:51:55', '2021-06-03 02:51:55'),
-(4, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, NULL, 7, 1, '2021-06-03 05:20:31', '2021-06-03 05:20:31'),
-(5, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, NULL, 4, 1, '2021-06-03 06:49:02', '2021-06-03 06:49:02'),
-(6, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, 10, 1, '2021-06-03 19:22:09', '2021-06-03 19:22:09'),
-(7, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, NULL, 11, 1, '2021-06-03 19:37:35', '2021-06-03 19:37:35'),
-(8, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, 12, 1, '2021-06-03 23:14:10', '2021-06-03 23:14:10'),
-(9, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, 13, 1, '2021-06-03 23:32:42', '2021-06-03 23:32:42'),
-(10, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, NULL, 14, 1, '2021-06-03 23:40:56', '2021-06-03 23:40:56'),
-(11, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, 6, 2, '2021-06-08 01:21:13', '2021-06-08 03:36:36'),
-(12, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', NULL, NULL, NULL, NULL, NULL, 6, 3, '2021-06-08 01:21:57', '2021-06-08 01:21:57');
+(27, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', NULL, NULL, NULL, NULL, 15, 1, '2021-06-10 18:04:10', '2021-06-10 18:04:10'),
+(42, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', NULL, NULL, NULL, NULL, NULL, 9, 2, '2021-06-10 23:32:23', '2021-06-10 23:32:23'),
+(43, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', NULL, NULL, NULL, NULL, NULL, 9, 1, '2021-06-11 01:15:21', '2021-06-11 01:15:21');
 
 -- --------------------------------------------------------
 
@@ -210,17 +201,8 @@ CREATE TABLE `fitur_kerjakan` (
 
 INSERT INTO `fitur_kerjakan` (`id`, `fitur_utama_id`, `fitur_tambahan_id`, `users_id`, `ide_id`, `created_at`, `updated_at`) VALUES
 (1, 1, 3, 6, 1, '2021-05-31 02:59:08', '2021-05-31 02:59:08'),
-(2, 1, 3, 5, 1, '2021-05-30 20:02:35', '2021-06-02 23:16:55'),
-(3, 2, 3, 8, 1, '2021-06-03 02:51:27', '2021-06-03 02:52:35'),
-(4, 2, 3, 7, 1, '2021-06-03 05:20:24', '2021-06-03 05:20:24'),
-(5, 2, 3, 4, 1, '2021-06-03 06:48:57', '2021-06-03 06:48:57'),
-(6, 1, 3, 10, 1, '2021-06-03 19:22:00', '2021-06-03 19:22:00'),
-(7, 1, 3, 11, 1, '2021-06-03 19:37:28', '2021-06-03 19:37:28'),
-(8, 2, 3, 12, 1, '2021-06-03 23:13:41', '2021-06-03 23:14:35'),
-(9, 2, 3, 13, 1, '2021-06-03 23:31:57', '2021-06-03 23:33:25'),
-(10, 1, 3, 14, 1, '2021-06-03 23:40:25', '2021-06-03 23:40:25'),
-(12, 4, 5, 6, 3, '2021-06-08 01:16:50', '2021-06-08 01:17:36'),
-(13, 9, 8, 6, 2, '2021-06-08 01:21:05', '2021-06-08 01:21:05');
+(43, 9, 8, 9, 2, '2021-06-10 23:32:18', '2021-06-10 23:32:18'),
+(44, 1, 3, 9, 1, '2021-06-11 01:15:00', '2021-06-11 01:15:00');
 
 -- --------------------------------------------------------
 
@@ -239,9 +221,9 @@ CREATE TABLE `flowchart` (
 --
 
 INSERT INTO `flowchart` (`id`, `link`, `ide_id`) VALUES
-(1, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 1),
-(3, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 2),
-(4, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 3);
+(1, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 1),
+(3, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 2),
+(4, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 3);
 
 -- --------------------------------------------------------
 
@@ -307,9 +289,9 @@ CREATE TABLE `ide` (
 --
 
 INSERT INTO `ide` (`id`, `judul`, `img`, `hari`, `rating`, `kategori_id`, `level_id`) VALUES
-(1, 'Website Portal Magang', 'assets/img/ide.png', '15 - 30 Hari', 4.5, 2, 1),
-(2, 'Aplikasi Pembayaran & Validasi Online', 'assets/img/ide.png', '10 - 20 Hari', 4.3, 1, 1),
-(3, 'Aplikasi Pengenalan Wajah', 'assets/img/ide.png', '15 - 45 Hari', 4.9, 1, 2);
+(1, 'Website Portal Magang', 'assets/img/ide.png', '30', 4.5, 2, 1),
+(2, 'Aplikasi Pembayaran & Validasi Online', 'assets/img/ide.png', '28', 4.3, 1, 1),
+(3, 'Aplikasi Pengenalan Wajah', 'assets/img/ide.png', '45', 4.9, 1, 2);
 
 -- --------------------------------------------------------
 
@@ -339,15 +321,9 @@ CREATE TABLE `jadwal_pengerjaan` (
 --
 
 INSERT INTO `jadwal_pengerjaan` (`id`, `tanggal_mulai`, `senin`, `selasa`, `rabu`, `kamis`, `jumat`, `sabtu`, `minggu`, `estimasi_waktu`, `ide_id`, `user_id`, `created_at`, `updated_at`) VALUES
-(2, '2021-06-17', 0, 0, 0, NULL, NULL, NULL, NULL, 1, 1, 6, '2021-06-02 18:34:53', '2021-06-02 18:34:53'),
-(7, '2021-06-03', 0, 0, NULL, NULL, NULL, NULL, NULL, 3, 1, 8, '2021-06-03 02:59:55', '2021-06-03 02:59:55'),
-(10, '2021-06-04', NULL, 0, 0, NULL, NULL, NULL, NULL, 5, 1, 7, '2021-06-03 05:24:21', '2021-06-03 05:24:21'),
-(11, '2021-06-04', NULL, 0, 0, 0, NULL, NULL, NULL, 5, 1, 4, '2021-06-03 06:49:16', '2021-06-03 06:49:16'),
-(12, '2021-06-05', 0, 0, 0, 0, NULL, NULL, NULL, 1, 1, 11, '2021-06-03 19:38:32', '2021-06-03 19:38:32'),
-(13, '2021-06-04', 0, 0, 0, 0, 0, NULL, NULL, 1, 1, 12, '2021-06-03 23:16:05', '2021-06-03 23:16:05'),
-(14, '2021-06-07', NULL, NULL, NULL, NULL, NULL, 0, 0, 3, 1, 13, '2021-06-03 23:34:33', '2021-06-03 23:34:33'),
-(15, '2021-06-12', 0, 0, 0, 0, 0, NULL, NULL, 5, 1, 14, '2021-06-03 23:43:14', '2021-06-03 23:43:14'),
-(16, '2021-06-09', 0, 0, 0, 0, NULL, NULL, NULL, 3, 2, 6, '2021-06-08 03:37:23', '2021-06-08 03:37:23');
+(1, '2021-06-11', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 6, 1, 14, '2021-06-11 03:14:37', '2021-06-11 03:14:37'),
+(55, '2021-06-11', 0, 0, 0, NULL, NULL, NULL, NULL, 3, 2, 9, '2021-06-10 23:32:35', '2021-06-10 23:32:35'),
+(56, '2021-06-11', 0, 0, NULL, NULL, NULL, NULL, NULL, 5, 1, 9, '2021-06-11 01:16:45', '2021-06-11 01:16:45');
 
 -- --------------------------------------------------------
 
@@ -371,16 +347,7 @@ CREATE TABLE `jadwal_sendiri` (
 --
 
 INSERT INTO `jadwal_sendiri` (`id`, `hari`, `sub_fitur_id`, `fitur_id`, `user_id`, `ide_id`, `created_at`, `updated_at`) VALUES
-(4, 5, 1, 1, 5, 1, '2021-06-03 19:18:25', '2021-06-03 19:18:25'),
-(5, 10, 2, 1, 5, 1, '2021-06-03 19:18:25', '2021-06-03 19:18:25'),
-(6, 9, 3, 1, 5, 1, '2021-06-03 19:18:25', '2021-06-03 19:18:25'),
-(7, 8, 6, 3, 5, 1, '2021-06-03 19:18:25', '2021-06-03 19:18:25'),
-(8, 7, 7, 3, 5, 1, '2021-06-03 19:18:25', '2021-06-03 19:18:25'),
-(9, 10, 1, 1, 10, 1, '2021-06-03 19:35:03', '2021-06-03 19:35:03'),
-(10, 3, 2, 1, 10, 1, '2021-06-03 19:35:03', '2021-06-03 19:35:03'),
-(11, 5, 3, 1, 10, 1, '2021-06-03 19:35:03', '2021-06-03 19:35:03'),
-(12, 2, 6, 3, 10, 1, '2021-06-03 19:35:03', '2021-06-03 19:35:03'),
-(13, 3, 7, 3, 10, 1, '2021-06-03 19:35:03', '2021-06-03 19:35:03');
+(4, 5, 1, 1, 5, 1, '2021-06-03 19:18:25', '2021-06-03 19:18:25');
 
 -- --------------------------------------------------------
 
@@ -447,9 +414,9 @@ CREATE TABLE `komponen_desain` (
 --
 
 INSERT INTO `komponen_desain` (`id`, `link`, `ide_id`) VALUES
-(1, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 1),
-(2, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 2),
-(3, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 3);
+(1, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 1),
+(2, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 2),
+(3, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 3);
 
 -- --------------------------------------------------------
 
@@ -506,6 +473,39 @@ CREATE TABLE `password_resets` (
   `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `pengerjaan`
+--
+
+CREATE TABLE `pengerjaan` (
+  `id` int(11) NOT NULL,
+  `sub_fitur_id` int(11) NOT NULL,
+  `fitur_id` int(11) NOT NULL,
+  `user_id` bigint(20) UNSIGNED NOT NULL,
+  `ide_id` int(11) NOT NULL,
+  `isSelesai` varchar(10) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `pengerjaan`
+--
+
+INSERT INTO `pengerjaan` (`id`, `sub_fitur_id`, `fitur_id`, `user_id`, `ide_id`, `isSelesai`, `created_at`, `updated_at`) VALUES
+(124, 17, 9, 9, 2, NULL, '2021-06-10 23:32:35', '2021-06-12 20:38:09'),
+(125, 18, 9, 9, 2, '0', '2021-06-10 23:32:35', '2021-06-11 01:13:41'),
+(126, 14, 8, 9, 2, '0', '2021-06-10 23:32:35', '2021-06-11 01:14:13'),
+(127, 15, 8, 9, 2, '0', '2021-06-10 23:32:35', '2021-06-11 01:14:13'),
+(128, 16, 8, 9, 2, '0', '2021-06-10 23:32:35', '2021-06-11 01:14:13'),
+(129, 1, 1, 9, 1, NULL, '2021-06-11 01:16:45', '2021-06-11 01:16:45'),
+(130, 2, 1, 9, 1, NULL, '2021-06-11 01:16:45', '2021-06-11 01:16:45'),
+(131, 3, 1, 9, 1, NULL, '2021-06-11 01:16:45', '2021-06-11 01:16:45'),
+(132, 6, 3, 9, 1, NULL, '2021-06-11 01:16:45', '2021-06-11 01:16:45'),
+(133, 7, 3, 9, 1, NULL, '2021-06-11 01:16:45', '2021-06-11 01:16:45');
 
 -- --------------------------------------------------------
 
@@ -594,16 +594,8 @@ CREATE TABLE `teknologi_kerjakan` (
 
 INSERT INTO `teknologi_kerjakan` (`id`, `framework`, `bahasa_program`, `database_ide`, `version_control`, `users_id`, `ide_id`, `created_at`, `updated_at`) VALUES
 (1, 'Laravel', 'Java', 'Firebird', 'Gitlab', 5, 1, '2021-05-29 02:47:38', '2021-05-30 07:06:24'),
-(9, 'Laravel', 'PHP', 'MySQL', 'Github', 8, 1, '2021-06-03 02:41:00', '2021-06-03 02:51:11'),
-(10, 'Zend', 'PHP', 'Firebird', 'Gitlab', 7, 1, '2021-06-03 05:19:38', '2021-06-03 05:19:49'),
-(11, 'Laravel', 'C++', 'MySQL', 'Github', 4, 1, '2021-06-03 06:48:43', '2021-06-03 08:10:52'),
-(12, 'Zend', 'Java', 'MySQL', 'Github', 10, 1, '2021-06-03 19:21:52', '2021-06-03 19:21:52'),
-(13, 'Laravel', 'Java', 'MySQL', 'Github', 11, 1, '2021-06-03 19:36:55', '2021-06-03 19:37:11'),
-(14, 'Laravel', 'C++', 'MySQL', 'Github', 12, 1, '2021-06-03 23:13:21', '2021-06-03 23:13:29'),
-(15, 'Laravel', 'Java', 'MySQL', 'Github', 13, 1, '2021-06-03 23:31:03', '2021-06-03 23:31:29'),
-(16, 'Laravel', 'Swift', 'MySQL', 'Github', 14, 1, '2021-06-03 23:39:06', '2021-06-03 23:39:06'),
-(17, 'Laravel', 'PHP', 'MySQL', 'Github', 6, 2, '2021-06-08 00:55:06', '2021-06-08 00:55:06'),
-(18, 'Symfony', 'PHP', 'MySQL', 'Github', 6, 3, '2021-06-08 00:59:35', '2021-06-08 00:59:35');
+(49, 'Laravel', 'PHP', 'MySQL', 'Github', 9, 2, '2021-06-10 23:32:13', '2021-06-10 23:32:13'),
+(50, 'Laravel', 'PHP', 'MySQL', 'Github', 9, 1, '2021-06-11 01:14:50', '2021-06-11 01:14:50');
 
 -- --------------------------------------------------------
 
@@ -622,9 +614,9 @@ CREATE TABLE `ui_desain` (
 --
 
 INSERT INTO `ui_desain` (`id`, `link`, `ide_id`) VALUES
-(1, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 1),
-(2, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 2),
-(3, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 3);
+(1, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 1),
+(2, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 2),
+(3, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 3);
 
 -- --------------------------------------------------------
 
@@ -661,7 +653,8 @@ INSERT INTO `users` (`id`, `username`, `name`, `email`, `auth_type`, `github_id`
 (11, 'fagos', 'fagos', 'fagos@gmail.com', NULL, NULL, NULL, '$2y$10$gbMvju4eMBOUSP5DXDb2Z.SHeMSsg4KLzBZlTXbPH8QKTZ/1doOhq', NULL, '2021-06-03 19:36:32', '2021-06-03 19:36:32'),
 (12, 'sifago', 'sifago', 'sifago@gmail.com', NULL, NULL, NULL, '$2y$10$qZxamV7e2XCLqaJyjeFGpe4mSUf/KBCbvtxvSCQ.Ku8sMZ6GeTA8G', NULL, '2021-06-03 23:12:34', '2021-06-03 23:12:34'),
 (13, 'zettiar', 'zettiar', 'zettiar@gmail.com', NULL, NULL, NULL, '$2y$10$cfiiudx7YALNtIN/bw4jI.kbhgfUVe31WxSN7TXAiqDMlIRUmzpDa', NULL, '2021-06-03 23:28:17', '2021-06-03 23:28:17'),
-(14, 'rrrrrrr', 'reryyy', 'rry@gmail.com', NULL, NULL, NULL, '$2y$10$taAc4Lh.xapb7GTlNsqvp.6DFw8wq/YHvuQ/9wF4PGoP0pp9HksIe', NULL, '2021-06-03 23:38:34', '2021-06-03 23:38:34');
+(14, 'rrrrrrr', 'reryyy', 'rry@gmail.com', NULL, NULL, NULL, '$2y$10$taAc4Lh.xapb7GTlNsqvp.6DFw8wq/YHvuQ/9wF4PGoP0pp9HksIe', NULL, '2021-06-03 23:38:34', '2021-06-03 23:38:34'),
+(15, 'ninik', 'ninik', 'ninik@gmail.com', NULL, NULL, NULL, '$2y$10$njwozHwNffLJQMKLtqP4O.xKN6RQcNV0GwDvA1YqU7D5JRkJb/SnC', NULL, '2021-06-10 07:10:18', '2021-06-10 07:10:18');
 
 -- --------------------------------------------------------
 
@@ -700,9 +693,9 @@ CREATE TABLE `wireframe` (
 --
 
 INSERT INTO `wireframe` (`id`, `link`, `ide_id`) VALUES
-(1, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 1),
-(2, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 2),
-(3, 'https://drive.google.com/file/d/1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt/view?usp=sharing', 3);
+(1, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 1),
+(2, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 2),
+(3, 'https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1iQLrPBDNkmGOvwVVJgaZSTPh3ufEqKpt%26export%3Ddownload', 3);
 
 --
 -- Indexes for dumped tables
@@ -850,6 +843,12 @@ ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
+-- Indeks untuk tabel `pengerjaan`
+--
+ALTER TABLE `pengerjaan`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indeks untuk tabel `sub_fitur`
 --
 ALTER TABLE `sub_fitur`
@@ -925,7 +924,7 @@ ALTER TABLE `database_ide`
 -- AUTO_INCREMENT untuk tabel `delivirabless`
 --
 ALTER TABLE `delivirabless`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT untuk tabel `erd`
@@ -949,7 +948,7 @@ ALTER TABLE `fitur`
 -- AUTO_INCREMENT untuk tabel `fitur_kerjakan`
 --
 ALTER TABLE `fitur_kerjakan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT untuk tabel `flowchart`
@@ -979,13 +978,13 @@ ALTER TABLE `ide`
 -- AUTO_INCREMENT untuk tabel `jadwal_pengerjaan`
 --
 ALTER TABLE `jadwal_pengerjaan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- AUTO_INCREMENT untuk tabel `jadwal_sendiri`
 --
 ALTER TABLE `jadwal_sendiri`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT untuk tabel `kategori`
@@ -1018,6 +1017,12 @@ ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
+-- AUTO_INCREMENT untuk tabel `pengerjaan`
+--
+ALTER TABLE `pengerjaan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=134;
+
+--
 -- AUTO_INCREMENT untuk tabel `sub_fitur`
 --
 ALTER TABLE `sub_fitur`
@@ -1033,7 +1038,7 @@ ALTER TABLE `tantangan`
 -- AUTO_INCREMENT untuk tabel `teknologi_kerjakan`
 --
 ALTER TABLE `teknologi_kerjakan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT untuk tabel `ui_desain`
@@ -1045,7 +1050,7 @@ ALTER TABLE `ui_desain`
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT untuk tabel `version_control`
